@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Button, ButtonToolbar } from 'reactstrap';
 import 'whatwg-fetch';
 import logo from './logo.svg';
 import './App.css';
@@ -29,23 +30,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-            <h2>Do you hear an echo?</h2>
+            <ButtonToolbar>
+                <Button bsStyle="primary" bsSize="large">
+                    Large button
+                </Button>
+                <Button bsSize="large">Large button</Button>
+            </ButtonToolbar>
         </header>
-          <form className="App-intro" onSubmit={this.handleSubmit}>
-              <input type="text" onChange={this.handleChange}/>
-              <input type="submit" value="Echo"/>
-          </form>
       </div>
     );
   }
