@@ -30,8 +30,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
             <ButtonToolbar>
-                <Button className="Button" bsStyle="primary" bsSize="large">Large button</Button>
-                <Button className="Button" bsSize="large">Large button</Button>
+                <Button className="Button" bsStyle="primary" bsSize="large">Log In</Button>
+                <Button className="Button" bsSize="large">Sign Up</Button>
             </ButtonToolbar>
         </header>
       </div>
