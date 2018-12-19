@@ -11,4 +11,9 @@ public class DemoController {
     public String echo(@RequestParam(value = "request", defaultValue = "Hello!") String request) {
         return request;
     }
+
+    @RequestMapping(value = "/testMethod")
+    public String testMethod(@RequestParam(value = "inputText") String inputText) {
+        return "Successfully tested method! " + inputText;
+    }
 }
